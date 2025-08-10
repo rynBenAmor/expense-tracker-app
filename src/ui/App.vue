@@ -1,10 +1,6 @@
 <template>
   <div class="app container py-4">
-    <header class="text-center mb-4">
-      <h1 class="display-5 fw-bold text-primary">
-        <i class="fas fa-wallet me-2"></i>My Expense Tracker
-      </h1>
-    </header>
+
 
     <!-- Stats Cards -->
     <div class="row mb-4">
