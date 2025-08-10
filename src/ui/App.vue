@@ -188,8 +188,26 @@ export default {
       ).sort((a, b) => new Date(b.date) - new Date(a.date));
     }
   },
-  mounted() {
+  async mounted() {
     this.loadTransactions();
+
+
+    // TODO : ELECTRON.JS as a backend TESTING
+    window.ElectronAPI.TestPreload();
+
+    // Add an expense
+    await window.ElectronAPI.addExpense({
+      type: "expense",
+      amount: 25.5,
+      category: "Food",
+      date: new Date().toISOString().split("T")[0],
+      notes: "Lunch with friends"
+    });
+
+    // Get all expenses
+    const expenses = await window.ElectronAPI.getExpenses();
+    console.log(expenses); 
+
   },
   methods: {
     loadTransactions() {

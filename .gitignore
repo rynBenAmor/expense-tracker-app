@@ -1,6 +1,8 @@
 dist-electron
 dist-vue
 .vscode
+*.db
+
 
 # Logs
 logs
