@@ -85,8 +85,8 @@ h2 {
     margin-top: 24px;
 }
 
-.income,
-.expenses {
+.summary .income,
+.summary .expenses {
     background-color: white;
     padding: 24px;
     border-radius: var(--radius);
@@ -97,8 +97,8 @@ h2 {
     text-align: center;
 }
 
-.income:hover,
-.expenses:hover {
+.summary .income:hover,
+.summary .expenses:hover {
     transform: translateY(-2px);
 }
 
